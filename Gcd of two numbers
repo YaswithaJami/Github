@@ -1,0 +1,24 @@
+Problem:Gcd of two numbers
+Algorithm: To find the Greatest Common divisor(Gcd) of two numbers.
+1.Start.
+2.Define a class named Solution.
+3.Inside the class Solution, define a static method named gcd that takes two integers a and b as input and returns an integer representing their greatest common divisor.
+4.Check if b is equal to 0:
+ a. If true, return a as the GCD.
+5.If b is not equal to 0:
+ a. Recursively call the gcd function with arguments b and a % b.
+ b. Repeat steps 4 and 5 until b becomes 0.
+6.End.
+Code:
+class Solution {
+    public static int gcd(int a, int b) {
+        // code here
+        if(b==0)
+        return a;
+        else
+        return gcd(b,a%b);
+    }
+}
+Time Complexity: 
+  The time complexity for this code is O(log(min(a,b)));
+    
