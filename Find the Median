@@ -1,0 +1,37 @@
+Problem: Find the Median
+Algorithm: To Finding the mean for array of Integers after Sorting
+1.Start.
+2.Define a class named Solution.
+3.Inside the class Solution, define a method named find_median that takes an integer array v as input and returns an integer representing the median.
+4.Sort the array v in non-decreasing order using Arrays.sort(v).
+5.Get the length of the array v and store it in the variable n.
+6.Check if the length of the array v is odd (n % 2 == 1):
+ a. If true, return the middle element of the sorted array v, which is v[n/2].
+7.If the length of the array v is even:
+ a. Get the two middle elements of the sorted array v and store them in variables mid1 and mid2, calculated as v[n/2 - 1] and v[n/2], respectively.
+ b. Return the average of mid1 and mid2, calculated as (mid1 + mid2) / 2.
+8.End.
+Code:
+class Solution
+{
+    public int find_median(int[] v)
+    {
+        // Code here
+        Arrays.sort(v);
+        int n=v.length;
+        if(n % 2==1)
+        {
+            return v[n/2];
+        }
+        else
+        {
+            int mid1=v[n/2 -1];
+            int mid2=v[n/2];
+            return (mid1+mid2)/2;
+        }
+        
+    }
+}
+Time Complexity:
+  Time Complexity for this code is O(nlogn);
+
