@@ -1,0 +1,25 @@
+Problem: Pow of pow
+Algorithm:
+1.The code uses a formula to calculate the sum of squares of the first n even numbers:
+4*(n*(n+1)*(2n+1))/6;
+2.The formula involves basic arithmetic operations: multiplication, addition, and division.
+3.The formula computes the sum of squares of even numbers from 2 to 
+2 to 2n;
+Code:
+class Solution
+{
+    public long sum_of_square_evenNumbers(long n)
+    {
+        // we used the formula for this and take n value from user and then substitute in formula to get our desired output
+          return 4*((n * (n + 1) * (2 * n + 1)) / 6);
+
+    }
+}
+Time complexity: O(1) (constant time complexity).
+Space complexity: O(1) (constant space complexity).
+
+
+
+
+
+
