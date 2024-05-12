@@ -1,0 +1,31 @@
+Problem: Reverse digit
+Algorithm:To Find reverses the digits of a given number n without leading zeroes. 
+1.Start.
+2.Define a class named Solution.
+3.Inside the class Solution, define a method named reverse_digit that takes a long integer n as input and returns a long integer representing the reversed number.
+4.Initialize a long variable s to store the reversed number.
+5.While n is greater than 0:
+ a. Find the last digit of n by taking the remainder when divided by 10 (n % 10) and store it in the variable digit.
+ b. Update s by multiplying it by 10 and adding digit.
+ c. Divide n by 10 to remove the last digit.
+6.After the loop, return the value of s as the reversed number.
+7.End.
+Code:
+class Solution
+{
+    public long reverse_digit(long n)
+    {
+        // Code here
+        long s=0;
+        while(n>0)
+        {
+            long digit=n%10;
+            s=(s*10)+digit;
+            n/=10;
+        }
+        
+           return s;
+    }
+}
+Time Complexity:
+ Time Complexity of the above code is O(logn);
