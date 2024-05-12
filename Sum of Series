@@ -1,0 +1,34 @@
+Problem:Sum Of Series
+Algorithm: To calculates the sum of the series of natural numbers up to a given integer n.
+1.Import the Scanner class from java.util package.
+
+2.Define a class named Solution.
+
+3.Inside the class Solution, define a static method named seriesSum that takes an integer n as input and returns a long.
+
+4.Initialize variables i and sum to 0.
+
+5.Iterate from 1 to n using a for loop:
+
+ a. Add the current value of i to sum.
+
+6.After the loop, return the value of sum.
+
+7.Define the main method:
+
+ a. Create a Scanner object named sc to read input from the console.
+
+ b. Read an integer n from the user using sc.nextInt().
+
+ c. Call the seriesSum method with n as an argument and print the result using System.out.println().
+Code:
+ class Solution {
+    public static long seriesSum(int n) {
+        // code here
+       
+        return ((long)n*(long)(n+1))/2;
+    }
+ }
+Time Complexity:
+ The time complexity of this code is independent of the input size n, making it O(1) or constant time complexity.
+        
