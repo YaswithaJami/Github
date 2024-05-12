@@ -1,0 +1,13 @@
+Problem: Dice problem
+Algorithm: Calculate the opposite face of a dice by subtracting the input face number from 7.
+1.Subtract the input face number N from 7 (since opposite faces on a standard six-sided die always sum up to 7).
+2.Return the result, which represents the opposite face of the given face number N.
+Time complexity: O(1) (constant time complexity).
+Space complexity: O(1) (constant space complexity).
+Code:
+class Solution{
+    static int oppositeFaceOfDice(int N){
+        // code here
+        return 7 - N;
+    }
+}
