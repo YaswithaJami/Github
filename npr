@@ -1,0 +1,18 @@
+Problem: npr
+Algorithm: Calculate the permutation (nPr) using a loop and multiplication.
+Start with a variable ans initialized to 1.
+Iterate i from n down to (n - r) + 1.
+Multiply ans by i in each iteration.
+Return the value of ans.
+Code:
+class Solution{
+public:
+    long long nPr(int n, int r){
+        // code here
+        long int ans=1;
+        for(int i=n;i>(n-r);i--)
+            ans*=i;
+        return ans;
+    }
+};
+Space complexity: O(1)
